@@ -9,10 +9,29 @@ const products = [
     name: "Organic Bananas",
     price: 2.99,
     weight: "1 bunch (5-7 pieces)",
-    image: "https://images.unsplash.com/photo-1603833665858-e61d17a86224?auto=format&fit=crop&q=80&w=800",
-    category: "Fruits"
+    image: "https://images.unsplash.com/photo-1603833665858-e61d17a86224?auto=format&fit=crop&q=80&w=800"
   },
-  // ... more products
+  {
+    id: "2",
+    name: "Fresh Avocados",
+    price: 4.99,
+    weight: "2 pieces",
+    image: "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    id: "3",
+    name: "Red Bell Peppers",
+    price: 1.99,
+    weight: "2 pieces",
+    image: "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    id: "4",
+    name: "Organic Strawberries",
+    price: 5.99,
+    weight: "1 lb package",
+    image: "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&q=80&w=800"
+  }
 ];
 
 const categories = ['All', 'Fruits', 'Vegetables', 'Dairy', 'Meat', 'Bakery'];
@@ -68,7 +87,7 @@ export default function SearchPage() {
       </div>
 
       {/* Results */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2">
         {filteredProducts.map(product => (
           <ProductCard key={product.id} {...product} />
         ))}

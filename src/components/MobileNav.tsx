@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
+  AlignRight,
   CalendarFold,
   CircleUser,
   Home,
@@ -15,9 +16,9 @@ import { useCart } from "../context/CartContext";
 const navItems = [
   { name: "Home", icon: Home, path: "/" },
   { name: "Search", icon: Search, path: "/search" },
-  { name: "Cart", icon: ShoppingBag, path: "/cart" },
+  // { name: "Cart", icon: ShoppingBag, path: "/cart" },
   { name: "Orders", icon: CalendarFold, path: "/orders" },
-  { name: "Account", icon: CircleUser, path: "/profile" },
+  { name: "Account", icon: AlignRight, path: "/profile" },
 ];
 
 export default function MobileNav() {

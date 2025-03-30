@@ -17,7 +17,8 @@ export default function ShopLayout() {
   // })
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-800">
+    <div className="min-h-screen  dark:bg-gray-800">
+      {/* bg-gray-50 */}
       <Header />
       <Sidebar/>
       <main className={"pb-20 lg:pl-64"}>
